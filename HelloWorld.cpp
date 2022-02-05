@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main() {
-    cout << "Hello World!";
+int fun() {
+    cout << "_" << sizeof(int*) <<"_";
+    cout << "\n NewLine \n";
     return 0;
 }

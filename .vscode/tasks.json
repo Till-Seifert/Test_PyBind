@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.pyd",
+				"-I",
+				"C:\\Users\\d91675\\Documents\\GitHub\\Test_PyBind\\extern\\pybind11\\include",
+				"-I",
+				"C:\\Users\\d91675\\AppData\\Local\\Programs\\Python\\Python310\\include",
+				"-L",
+				"C:\\Users\\d91675\\AppData\\Local\\Programs\\Python\\Python310\\libs",
+				"-shared",
+				"-lpython310",
+				//"-std=gnu++11"
+			],
+			"options": {
+				"cwd": "${fileDirname}",
+				"cppConfig": "default (gdb) Attach",
+				//"dbx": ""
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		},
+	]
+}
